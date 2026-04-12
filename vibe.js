@@ -1,6 +1,3 @@
-// script.js — Space Threats Shooter
-// Updated: press P to toggle pause (gameState 'paused')
-
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('game');
   const ctx = canvas.getContext('2d');
@@ -250,9 +247,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('keydown', e=>{
     keys[e.code] = true;
 
-    // Pause toggle: 'KeyP' (P)
+   
     if(e.code === 'KeyP'){
-      // Only toggle pause when in playing or paused states
+      
       if(gameState === 'playing' || gameState === 'paused'){
         togglePause();
       }
@@ -282,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function update(){
-    // When paused, skip update logic but keep rendering loop running
+    
     if(gameState !== 'playing') return;
 
     if(keys['ArrowLeft']) player.x -= player.speed;
@@ -303,8 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.y += e.speed;
       e.angle += e.wobble;
       e.x += Math.sin(e.angle)*0.6;
-
-      // wrap to top if they pass bottom
+      
       if(e.y - e.r > H){
         e.y = -e.r - (Math.random()*40);
         e.x = Math.max(40, Math.min(W-40, e.x + (Math.random()*80 - 40)));

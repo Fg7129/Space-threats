@@ -19,8 +19,8 @@ canvas{
 #overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:760px;max-width:95%;background:linear-gradient(180deg, rgba(0,0,0,0.92), rgba(0,0,0,0.85));color:var(--text);padding:20px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.7);display:none;z-index:10}
 #overlay h2{margin:0 0 8px 0;color:var(--accent)}
 #overlay p{margin:6px 0 12px 0;line-height:1.4}
-#startBtn{background:var(--accent);border:none;padding:10px 14px;border-radius:8px;color:#012;cursor:pointer;font-weight:700}
-.small{font-size:13px;color:#bcd}
+#startBtn{background:var(--accent);border:none;padding:10px 14px;border-radius:8px;color:rgb(0, 52, 104);cursor:pointer;font-weight:700}
+.small{font-size:13px;color:rgb(0, 46, 92)}
 .threatBadge{display:inline-block;padding:6px 8px;border-radius:8px;margin-right:8px;font-weight:700}
 
 /* Threat banner (shows after each wave / when new threat appears) */
