@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Space Threats</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="threatBanner" class="threat-banner" aria-hidden="true"></div>
+
+  <div id="gameWrap">
+    <canvas id="game" width="900" height="600"></canvas>
+    <div id="hud">
+      <div class="panel"><strong>Wave:</strong> <span id="waveNum">0</span> &nbsp; <strong>Score:</strong> <span id="score">0</span></div>
+      <div class="panel"><strong>Health:</strong> <span id="health">100</span> &nbsp; <strong>Bullets:</strong> <span id="bullets">∞</span></div>
+      <div class="panel small">Controls: Arrow keys = move · Space = shoot · Enter = mega (when prompted)</div>
+    </div>
+  </div>
+
+  <div id="overlay" role="dialog" aria-modal="true">
+    <h2 id="overlayTitle">Threat Incoming</h2>
+    <p id="overlayDesc"></p>
+    <div id="threatInfo" class="small"></div>
+    <div style="margin-top:12px;text-align:right">
+      <button id="startBtn">Start Wave</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
